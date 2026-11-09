@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100d28" />
+  <meta name="description" content="A cyber-anime inspired personal portfolio." />
+  <title>白皙 · Cyber Anime Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background" aria-hidden="true"></div>
+  <div class="background-shade" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="回到首页"><span class="brand-mark">✦</span> SHIRASAGI<span class="brand-dot">.NET</span></a>
+    <nav>
+      <a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#interests">INTERESTS</a><a href="#contact">CONTACT</a>
+    </nav>
+    <a class="github-link" href="https://github.com/你的用户名" target="_blank" rel="noreferrer">GITHUB ↗</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> PERSONAL ARCHIVE / 2026</p>
+        <p class="hello">こんにちは、世界。</p>
+        <h1>Hi, I'm <span>白皙</span><i class="cursor">_</i></h1>
+        <div class="type-line"><span id="typed"></span><span class="type-cursor">▍</span></div>
+        <p class="hero-desc">日语与工商管理专业在读 · 用语言连接世界，用好奇心探索更多可能。</p>
+        <div class="tags"><span>日本語</span><span>BUSINESS</span><span>ANIME LOVER</span><span>CREATIVE MIND</span></div>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#about">探索我的档案 <b>↓</b></a>
+          <a class="text-btn" href="https://github.com/你的用户名" target="_blank" rel="noreferrer">访问 GitHub ↗</a>
+        </div>
+      </div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="orbit-core">白<br><small>PROFILE</small></div>
+        <span class="orbit-star star-a">✦</span><span class="orbit-star star-b">✧</span>
+      </div>
+      <div class="scroll-hint">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="content-grid" id="about">
+      <article class="panel about-panel reveal">
+        <div class="section-kicker">01 / ABOUT ME</div>
+        <h2>关于我 <span>— 个人档案</span></h2>
+        <p>你好！我是一名日语与工商管理专业的大三学生，对语言、商业管理和跨文化交流充满兴趣，也喜欢在二次元世界里收集灵感。</p>
+        <p>正在探索公共服务与日企相关的发展方向，希望把专业能力、沟通能力和持续学习的热情，转化为真正有价值的行动。</p>
+        <div class="info-list">
+          <div><span>EDUCATION</span><b>本科 · 大三</b></div>
+          <div><span>MAJOR</span><b>日语与工商管理</b></div>
+          <div><span>CAREER INTEREST</span><b>公务员 / 日企管理相关岗位</b></div>
+          <div><span>CERTIFICATES</span><b>英语四级 · 日语专四</b></div>
+        </div>
+      </article>
+
+      <article class="panel skills-panel reveal" id="skills">
+        <div class="section-kicker">02 / SKILL TREE</div>
+        <h2>技能树 <span>— 持续升级中</span></h2>
+        <div class="skill-group"><label>LANGUAGES / 语言能力</label><div class="skill-chips"><span>日语 · 专业学习</span><span>英语 · CET-4</span><span>中文 · 母语</span></div></div>
+        <div class="skill-group"><label>BUSINESS / 商务基础</label><div class="skill-chips"><span>工商管理</span><span>组织与沟通</span><span>跨文化理解</span></div></div>
+        <div class="skill-group"><label>TOOLS / 工具技能</label><div class="skill-chips"><span>PowerPoint</span><span>Word</span><span>Excel</span><span>HTML / CSS · 学习中</span></div></div>
+        <p class="muted-note">技能等级与项目成果可按实际情况继续补充，不必为了好看而夸大。</p>
+      </article>
+
+      <article class="panel projects-panel reveal" id="projects">
+        <div class="section-kicker">03 / SELECTED WORKS</div>
+        <h2>项目与作品 <span>— BUILD LOG</span></h2>
+        <div class="project-list">
+          <div class="project-item"><div class="project-icon">✧</div><div><h3>Cyber Anime Portfolio</h3><p>正在制作的动态个人主页，尝试 HTML、CSS 与 JavaScript 动效。</p><small>HTML · CSS · JAVASCRIPT</small></div><span class="status">IN PROGRESS</span></div>
+          <div class="project-item"><div class="project-icon">文</div><div><h3>日语学习档案</h3><p>整理词汇、语法、练习与阶段性复习记录。</p><small>JAPANESE · LEARNING</small></div><span class="status">LEARNING</span></div>
+          <div class="project-item"><div class="project-icon">↗</div><div><h3>更多项目，敬请期待</h3><p>未来在这里展示课程项目、实践经历与个人作品。</p><small>COMING SOON</small></div><span class="status">PLANNED</span></div>
+        </div>
+      </article>
+
+      <article class="panel interests-panel reveal" id="interests">
+        <div class="section-kicker">04 / OFFLINE MODE</div>
+        <h2>兴趣坐标 <span>— MY UNIVERSE</span></h2>
+        <div class="interest-grid">
+          <div><b>✿</b><span>动漫 / 游戏</span></div><div><b>♫</b><span>音乐</span></div>
+          <div><b>▧</b><span>摄影与美术</span></div><div><b>✈</b><span>旅行</span></div>
+          <div><b>本</b><span>阅读</span></div><div><b>☆</b><span>收集灵感</span></div>
+        </div>
+        <p class="quote">“好きなものがあるから、きっともっと頑張れる。”</p>
+      </article>
+
+      <article class="panel roadmap-panel reveal">
+        <div class="section-kicker">05 / NEXT QUEST</div>
+        <h2>成长路线 <span>— NEXT LEVEL</span></h2>
+        <div class="timeline">
+          <div><i></i><span>NOW</span><p>夯实日语与工商管理专业基础，积累实践经历。</p></div>
+          <div><i></i><span>NEXT</span><p>了解公务员招录与日企岗位要求，针对性提升能力。</p></div>
+          <div><i></i><span>FUTURE</span><p>找到能发挥语言优势、管理知识与个人价值的职业方向。</p></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact panel reveal" id="contact">
+      <div><div class="section-kicker">06 / ESTABLISH CONNECTION</div><h2>保持联系 <span>— LET'S CONNECT</span></h2><p>感谢你来到我的小小宇宙。欢迎通过 GitHub 与我交流！</p></div>
+      <a class="primary-btn" href="https://github.com/你的用户名" target="_blank" rel="noreferrer">FIND ME ON GITHUB ↗</a>
+    </section>
+    <footer><span>© 2026 白皙 · MADE WITH CURIOSITY</span><span>またね。<b>✦</b></span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
